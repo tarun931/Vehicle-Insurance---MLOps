@@ -10,9 +10,7 @@ from dotenv import load_dotenv
 
 # load_dotenv("../.env")
 load_dotenv(Path(__file__).resolve().parents[2] / ".env")
-print(os.getcwd())
-print(MONGODB_URL_KEY)
-print(os.getenv(MONGODB_URL_KEY))
+
 
 # Load the certificate authority file to avoid timeout errors when connecting to MongoDB
 ca = certifi.where()
